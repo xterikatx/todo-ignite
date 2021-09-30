@@ -65,6 +65,7 @@ export function TasksList({
             <TouchableOpacity
               testID={`trash-${index}`}
               style={{ paddingHorizontal: 24 }}
+              onPress={(): void => removeTask(item.id)}
               //TODO - use onPress (remove task) prop
             >
               <Image source={trashIcon} />
